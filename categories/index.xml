@@ -11,6 +11,15 @@
    
    
      <item>
+       <title>Two_posts</title>
+       <link>https://www.foobrr.com/posts/two_posts/</link>
+       <pubDate>Sat, 19 Sep 2020 21:00:02 +0530</pubDate>
+       
+       <guid>https://www.foobrr.com/posts/two_posts/</guid>
+       <description></description>
+     </item>
+   
+     <item>
        <title>My_first</title>
        <link>https://www.foobrr.com/posts/my_first/</link>
        <pubDate>Sat, 19 Sep 2020 20:28:55 +0530</pubDate>
