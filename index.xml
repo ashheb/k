@@ -1,0 +1,28 @@
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+ <channel>
+   <title>FooBrr</title>
+   <link>https://www.foobrr.com/</link>
+   <description>Recent content on FooBrr</description>
+   <generator>Hugo -- gohugo.io</generator>
+   <copyright>Copyright &amp;copy; 2020 - AH</copyright>
+   <lastBuildDate>Sat, 19 Sep 2020 20:28:55 +0530</lastBuildDate>
+   
+       <atom:link href="https://www.foobrr.com/index.xml" rel="self" type="application/rss+xml" />
+   
+   
+     <item>
+       <title>My_first</title>
+       <link>https://www.foobrr.com/posts/my_first/</link>
+       <pubDate>Sat, 19 Sep 2020 20:28:55 +0530</pubDate>
+       
+       <guid>https://www.foobrr.com/posts/my_first/</guid>
+       <description>&lt;p&gt;Holy Cow&lt;/p&gt;
+&lt;h3 id=&#34;m-3&#34;&gt;M 3&lt;/h3&gt;
+&lt;p&gt;&amp;lt;&amp;gt;h4
+ilkfajsdas H4&lt;/p&gt;
+</description>
+     </item>
+   
+ </channel>
+</rss>
