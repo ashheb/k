@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Post Two: Running Notes for Mac - FooBrr</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Yet another personal page with random musings. All opinions are personal." />
+<meta name="author" content="FooBrr" /><meta property="og:title" content="Post Two: Running Notes for Mac" />
+<meta property="og:description" content="My second post here (well, first, ignoring the Hello World.
+This is more of a collection of notes that I&rsquo;m trying to maintain of some of the commands that I use(d) on my MacBook Pro." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.foobrr.com/posts/post_two/" />
+<meta property="article:published_time" content="2020-09-19T21:00:02+05:30" />
+<meta property="article:modified_time" content="2020-09-19T21:00:02+05:30" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Post Two: Running Notes for Mac"/>
+<meta name="twitter:description" content="My second post here (well, first, ignoring the Hello World.
+This is more of a collection of notes that I&rsquo;m trying to maintain of some of the commands that I use(d) on my MacBook Pro."/>
+
+<meta name="generator" content="Hugo 0.74.3" />
+    
+    <link rel="shortcut icon" href="images/1.ico" />
+  
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://www.foobrr.com/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="https://www.foobrr.com/css/styles.css" /></head>
+
+<body>
+  <div id="container">
+    <header>
+      <h1>
+                <a href="https://www.foobrr.com/">FooBrr</a>
+            </h1>
+
+      <ul id="social-media">
+             <li>
+               <a href="https://twitter.com/foobrr" title="Twitter">
+               <i class="fab fa-twitter fa-lg"></i>
+               </a>
+             </li>
+      </ul>
+      
+      <p><em>Scratch that writing itch..</em></p>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Post Two: Running Notes for Mac</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2020-09-19T21:00:02&#43;05:30">Sep 19, 2020</time>
+        </li>
+        
+
+        
+
+        <li>One minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+<div class="featured_image">
+    <a href="https://www.foobrr.com/posts/post_two/" title="Post Two: Running Notes for Mac">
+        <img src="">
+    </a>
+</div>
+
+
+
+    <p>My second post here (well, first, ignoring the <a href="'https://www.foobrr.com/posts/my_first/post">Hello World</a>.</p>
+<p>This is more of a collection of notes that I&rsquo;m trying to maintain of some of the commands that I use(d) on my MacBook Pro.</p>
+<ul>
+<li>Keep an eye on the  <em><strong>Charge</strong></em> levels over the course of the past few days (weeks?)</li>
+</ul>
+<pre><code>$ pmset -g log | grep -w Charge
+</code></pre><ul>
+<li>Get a count of number of battery cylces.</li>
+</ul>
+<pre><code>$ system_profiler SPPowerDataType | grep &quot;Cycle Count&quot; | awk '{print $3}'
+</code></pre><p>Output will be an integer. Example: 432</p>
+<ul>
+<li>Get the status of battery.</li>
+</ul>
+<pre><code>$ system_profiler SPPowerDataType | grep &quot;Condition&quot; | awk '{print $2}'
+</code></pre><p>Output will be a text indicating the status of battery. Example: Normal</p>
+<ul>
+<li>Get more details about battery:</li>
+</ul>
+<pre><code>$ system_profiler SPPowerDataType | grep -A3 -B7 &quot;Condition&quot;
+</code></pre><p>Output will be similar to:</p>
+<pre><code>    Charge Information:
+      Charge Remaining (mAh): 2405
+      Fully Charged: No
+      Charging: No
+      Full Charge Capacity (mAh): 5321
+    Health Information:
+      Cycle Count: 123
+      Condition: Normal
+    Battery Installed: Yes
+    Amperage (mA): -24
+    Voltage (mV): 11852
+</code></pre>
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        
+        <li>
+            <a href="https://www.foobrr.com/posts/my_first/"><i class="fa fa-chevron-circle-left"></i> Hello World</a>
+        </li>
+        
+        
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <h6>Copyright © 2020 - AH |
+            Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+            <a href="https://www.foobrr.com/index.xml">Subscribe </a></h6>
+    </footer>
+</div>
+<script src="https://www.foobrr.com/js/scripts.js"></script>
+
+</body>
+
+</html>
+
